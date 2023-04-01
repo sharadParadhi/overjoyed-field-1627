@@ -11,14 +11,23 @@ import BeautyWellness from "../pages/beauty&wellness"
 import GiftsCandless from "../pages/gifts&candles"
 
 function Allroutes(props){
+    
+
+return (
+    <>
+    
+<Link to="/"  element={Home}>Home</Link>
 
 <Routes>
-        <Route  path="/" element={Home}/>
-        <Route  path="/clothing" element={Clothing}/>
-        <Route  path="/shoes" element={Shoes}/>
-        <Route path="/dresses" element={Dresses}/>
+        <Route  path="/" element={<Home/>}></Route>
+        <Route  path="/clothing" element={<Clothing/>}/>
+        <Route  path="/shoes" element={<Shoes/>}/>
+        <Route path="/dresses" element={<Dresses/>}/>
         
-    </Routes>
+        
+</Routes>
+</>
+)
 }
 
 export default Allroutes
