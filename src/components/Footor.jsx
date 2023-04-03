@@ -1,137 +1,100 @@
-// import React from 'react'
-// import styles from"./Footer.module.css"
-// import {AiFillInstagram} from "react-icons/ai"
-// import {GrMailOption} from "react-icons/gr"
-// import {GrLocation} from "react-icons/gr"
-// import {FaPinterest} from "react-icons/fa"
-// import {AiFillFacebook} from "react-icons/ai"
-// import {FaTwitter} from "react-icons/fa"
+import { Box, Button, HStack, Text, Input, Image } from "@chakra-ui/react";
+import React from "react";
 
-// const Footer = () => {
-//   return (
-//     <div className={styles.maindiv}>
-//       <div className={styles.emaildiv}>
-//           <div style={{marginTop:"23px"}}>
-//             <p>Sign Up for Email</p>
-//             <p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p>
-//           </div>
-//           <div>
-//   <label>Email Address*</label><br/>
-//   <input type="email"  />
-//   <button>SUBMIT</button>
-//           </div>
-//       </div>
-
-//       <p className={styles.midp}>By signing up, you will receive Anthropologie offers, promotions and other commercial messages. You are also agreeing to Anthropologie’s <a href="#">
-//           Privacy Policy.</a> You may unsubscribe at any time.</p>
-
-//         <br/>
-//         <hr/>
-// <br/>
-       
-       
-//         <div className={styles.flexdiv}>
-//             <div>
-//                <h3 className={styles.flexh3}>Help</h3>
-//                <a href="">Track Your Order</a>
-//                <a href="">Start A Return Or Exchange(US)</a>
-//                <a href="">Returns & Exchanges</a>
-//                <a href="">Shipping</a>
-//                <a href="">Customer Service</a>
-//                <a href="">Current Promotions</a>
-//                <a href="">Product Recalls</a>
-//                <a href="">COVID-19 Update</a>
-
-//             </div>
-//             <div>
-//                 <h3 className={styles.flexh3}>About Us</h3>
-//                 <a href="">Our Story</a>
-//                  <a href="">Events</a>
-//                   <a href="">A Greater Good</a>
-//                   <a href="">Diversity & Inclusion</a>
-//                    <a href="">Stories</a>
-//             </div>
-//             <div>
-//                 <h3 className={styles.flexh3}>Services</h3>
-//                 <a href="">AnthroPerks</a>
-//                 <a href="">Gift Cards</a>
-//                 <a href="">Trade Membership</a>
-//                 <a href="">Furniture: Guides & Services</a>
-//                 <a href="">Store Pickup & Collection Points</a>
-//             </div>
-//             <div>
-//                 <h3 className={styles.flexh3}>Connect</h3>
-//                 <a href="">Contact Us</a>
-//                 <a href="">Stay Connected</a>
-//                 <a href="">Careers</a>
-//                 <a href="">Styling Services</a>
-//                 <a href="">Request A Catalog</a>
-                
-//             </div>
-//             <div>
-//                 <div>
-//                 <GrLocation className={styles.grtag}/> 
-//                 <a href="#" className={styles.mtag}>Store Locator </a> 
-//                 </div>
-//                     <div>
-//                         <GrMailOption className={styles.gmtag}/>
-//                     <a href="#" className={styles.mtag}>Get Email</a>
-//                     </div>
-               
-              
-          
-//            {/* <a href="#"> <i className="fa-thin fa-envelope"></i> Get Email</a> */}
-
-                
-//             </div>
-//         </div>
-//         <div className={styles.instadiv}>
-//             <div>
-//                 <img src="https:////images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg" alt="" />
-//             </div>
-//             <div >
-//                 <FaPinterest  className={styles.insta}/>
-
-//                 <AiFillInstagram className={styles.insta}/>
-//                 <AiFillFacebook  className={styles.insta}/>
-//                 <FaTwitter  className={styles.insta}/>
-               
-//             </div>
-//             </div>
-//             <img  className={styles.image}src="https://images.ctfassets.net/5de70he6op10/5dQGHO8D1YIWYeqqKOSMAG/e8b853d2a7f1967ce2b4039f5b8b94bf/032122_MothersDay_Gifting_SiteFooter_LS.jpg" alt="" />
+function Footer() {
+  return (
+    <Box w="95%" m="auto">
+      <Box mt="50px">
+        <Text fontSize={"2xl"} fontWeight="bold">About Us</Text>
+        <Text fontSize={"sm"}>
+          Our mission at Anthropologie has always been to surprise and delight
+          you with unexpected, distinctive finds for your closet and home. We
+          source and craft all of our products with care, ensuring that any
+          treasure you find at Anthropologie is unique, just like you. Explore
+          our dress shop to find styles and fits perfect for any occasion, from
+          cocktail parties to weddings to casual daytime silhouettes. Browse
+          party skirts, wide-leg pants and jeans, and blouses that will turn
+          heads. Complete your look with uncommon accessories—think only-here
+          slides and head-turning totes. Discover our expansive home
+          collections, from furniture to curtains, decorative pillows to duvets,
+          wall art to Moroccan-inspired rugs. Looking for a housewarming gift?
+          Try a coffee table book, original glassware or a set of coasters. Read
+          More
+        </Text>
+      </Box>
+      <Box mt="50px">
+        <HStack spacing={"50px"}>
+          <Box>
+            <Text fontSize={"2xl"} fontWeight="bold">Sign Up for Email</Text>
+            <Text fontSize={"sm"}>
+              Receive early access to new arrivals, sales, exclusive content,
+              events and much more!
+            </Text>
+          </Box>
+          <HStack spacing={"20px"}>
+            <Input placeholder="Enter Email" size="lg" w="350px" />
+            <Button>Submit</Button>
+          </HStack>
+        </HStack>
+        <Text fontSize={"sm"} mt="20px">
+          By signing up, you will receive Anthropologie offers, promotions and
+          other commercial messages. You are also agreeing to Anthropologie’s
+          Privacy Policy. You may unsubscribe at any time.
+        </Text>
+      </Box>
+      <HStack w="95%" m="auto" mt="70px" justifyContent={"space-around"} >
+        <Box textAlign={"left"}>
+            <Text fontSize={"xl"} fontWeight={"bold"}>Help</Text>
+            <Text>Track Your Order</Text>
+            <Text>Start A Return Or Exch ange (US)</Text>
+            <Text>Returns & Exchanges</Text>
+            <Text>Shipping</Text>
+            <Text>Customer Service</Text>
+            <Text>Current Promotions</Text>
+            <Text>Product Recalls</Text>
+        </Box>
+        <Box textAlign={"left"}>
+            <Text fontSize={"xl"} fontWeight={"bold"}>About Us</Text>
+            <Text>Our Story</Text>
+            <Text>Events</Text>
+            <Text>A Greater Good</Text>
+            <Text>Diversity & Inclusion</Text>
+            <Text>Stories</Text>
+        </Box>
+        <Box textAlign={"left"}>
+            <Text fontSize={"xl"} fontWeight={"bold"}>Services</Text>
+            <Text>AnthroPerks</Text>
+            <Text>Gift Cards</Text>
+            <Text>AnthroLiving Designer & Trade</Text>
+            <Text>Program</Text>
+            <Text>Furniture: Guides & Services</Text>
+            <Text>Store Pickup & Collection Points</Text>
+            <Text>Klarna</Text>
+        </Box>
+        <Box textAlign={"left"}>
+            <Text fontSize={"xl"} fontWeight={"bold"}>Connect</Text>
+            <Text>Contact Us</Text>
+            <Text>Stay Connected</Text>
+            <Text>Careers</Text>
+            <Text>Styling Services</Text>
+            <Text>Request A Catalog</Text>
+        </Box>
+      </HStack>
+      <Image src="https://images.ctfassets.net/5de70he6op10/2Lh06CXT4AzVnj4LxvGsQD/a424e10a3b8c9e2e270dc22505bfbfa6/022421_SiteFooter_SMS_SIgnUp.jpg"
+      alt="imgfooter"
+      mt="35px"
+      />
+      <HStack w="25%" m="auto" mt="40px" >
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu"  fontSize={"sm"}>US</Text>
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu" fontSize={"sm"}>France</Text>
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu" fontSize={"sm"}>Germany </Text>
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu" fontSize={"sm"}>Italy</Text>
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu" fontSize={"sm"}>Spain </Text>
+        <Text _hover={{ textDecoration: "underline" }} cursor="context-menu" fontSize={"sm"}>UK </Text>
         
-// <div className={styles.fdiv}>
-//     <p><a href="#">US</a></p>
-//     <hr/> 
-//     <p><a href="#">France</a></p>
-//     <hr/> 
-//     <p><a href="#">Germany</a></p>
-//     <hr/> 
-//     <p><a href="#">UK</a></p>
-// </div>
+      </HStack>
+    </Box>
+  );
+}
 
-// <div className={styles.lastdiv}>
-
-// <div className={styles.bfdiv}>
-//     <a href="#">Privacy Policy</a>
-//     <hr/> 
-//     <a href="#">Privacy Policy</a>
-//     <hr/> 
-//     <a href="#">CA Transparency</a>
-//     <hr/> 
-//     <a href="#">Accessibility</a>
-//     <hr/> 
-//     <a href="#">URBN.com</a>
-//     <hr/> 
-//     <a href="#">For CA Residents</a>
-// </div>
-
-// <div className={styles.bffdiv}>
-//     <p>2022 URBN.com. All Rights Reserved.</p>
-// </div>
-// </div>
-//     </div>
-//   )
-// }
-
-// export default Footer
+export default Footer;

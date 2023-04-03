@@ -4,7 +4,7 @@
 function Dresses(){
 
     return (
-        <h1>Clothing</h1>
+        <h1>Dresses</h1>
     )
 }
 
