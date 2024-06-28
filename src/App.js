@@ -1,24 +1,18 @@
-
-import './App.css';
-import Navbar from './components/navbar';
-import Footer from './components/Footor';
-import Allroutes from './components/Allroutes';
-
-
+import "./App.css";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footor";
+import Allroutes from "./components/Allroutes";
+import {Box} from '@chakra-ui/react'
 
 function App() {
   return (
-<>
-
-
-<Navbar/>
-
-<Allroutes/>
-
-<Footer/>
-
-</>
-
+    <>
+      <Box bg={"#FAFAFA"}>
+        <Navbar />
+        <Allroutes />
+        <Footer />
+      </Box>
+    </>
   );
 }
 
