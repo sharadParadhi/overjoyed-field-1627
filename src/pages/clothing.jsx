@@ -81,14 +81,12 @@ function Clothing() {
 
                 <Box mt={5} bg="red.10">
                     <Flex alignItems={"center"} justifyContent={"space-evenly"} justifyItems={"center"} padding={5} >
-
                         <Button m={2} left={0} padding={8}bg="red.50"><Link>WEDDING GUEST DRESSES</Link></Button>
                         <Button m={2} padding={8} bg="red.50"><Link> CAUSAL DRESSES</Link></Button>
                         <Button m={2} padding={8} bg="red.50"><Link> PARTY DRESSES</Link></Button>
                         <Button m={2} padding={8} bg="red.50"><Link>WORK DRESSES</Link></Button>
                         <Button m={2} padding={8} bg="red.50"><Link> VACTION DRESSES</Link></Button>
                         <Button padding={8} bg="red.50"><Link > FROMAL DRESSES</Link></Button>
-
                     </Flex>
                     <hr></hr>
                 </Box>

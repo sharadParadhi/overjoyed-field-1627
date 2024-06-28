@@ -42,23 +42,25 @@ function Home() {
     console.log("home")
     return (
         <Box >
+          <Box color="gray.100" w={"100%"}/>
             <Box w={"90%"} m={"auto"} >
 
-            <Box w={"100%"} bg={"blue.10"} mt={10} bg="orange.50" padding={3}>
+            <Box w={"100%"} bg={"blue.10"} mt={10} padding={3}>
                 <Flex alignItems={"center"} justifyContent={"space-around"}>
-
-                    <Button w={"20%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link to="/clothing">Stoc-Trafic-top</Link></Button>
-                    <Button w={"20%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">Decor-DEFINED</Link></Button>
-                    <Button w={"20%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">THE FUNITURE EDIT</Link></Button>
-                    <Button w={"20%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">CAN'T MISS JEANS</Link></Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}>
+                      <Link to="/clothing">Stoc-Trafic-top</Link>
+                    </Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link to="/clothing">Stoc-Trafic-top</Link></Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link to="/clothing">Stoc-Trafic-top</Link></Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">Decor-DEFINED</Link></Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">THE FUNITURE EDIT</Link></Button>
+                    <Button w={"13%"} padding={8} bg="orange.50" border={"1px solid gray"}><Link  to="/clothing">CAN'T MISS JEANS</Link></Button>
                 </Flex>
-
             </Box>
 
             {/*  images rows*/}
             <Box w={"100%"}  mt={10}  >
                 <SimpleGrid display={"flex"} gap={"20px"} >
-                
                     <Box w={"60%"} border={"1px solid black"}>
                     <Link to="/clothing"><Image w={"100%"} h={500}src="https://images.urbndata.com/is/image/Anthropologie/4123650590242_042_b?$an-category$&qlt=80&fit=constrain" alt="img"/></Link>
                    
